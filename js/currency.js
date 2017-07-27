@@ -9,6 +9,8 @@
 (() => {
   'use strict'
 
+  var usdRate, eurRate, cadRate
+
   // creating a new XMLHttpRequest.
   const xhr = new XMLHttpRequest()
   // HTTP method and where to request
@@ -37,11 +39,24 @@
 
     console.log(rates)
 
-    var usdRate = rates.USD
-
-    var eurRate = rates.EUR
-
-    console.log("USD is " + usdRate + ", EUR is " + eurRate)
+    return rates
   }
+
+  function convert() {
+
+  	var inOne, inTwo
+
+  	var inOne = document.getElementById('input1');
+
+  	var inTwo
+
+  }
+
+  usdRate = rates.USD
+
+  eurRate = rates.EUR
+
+  console.log("USD is " + usdRate + ", EUR is " + eurRate)
+
 
 })()
