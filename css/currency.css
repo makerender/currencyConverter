@@ -5,4 +5,7 @@
   border: 1px solid black;
   max-width: 320px; }
 
+label, input {
+  display: inline-block; }
+
 /*# sourceMappingURL=currency.css.map */

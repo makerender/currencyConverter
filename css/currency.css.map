@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAE;EAAE,UAAU,EAAE,UAAU;;AAE1B,YAAa;EACZ,MAAM,EAAE,eAAe;EACvB,SAAS,EAAE,KAAK",
+"mappings": "AAAA,CAAE;EAAE,UAAU,EAAE,UAAU;;AAE1B,YAAa;EACZ,MAAM,EAAE,eAAe;EACvB,SAAS,EAAE,KAAK;;AAGjB,YAAa;EACZ,OAAO,EAAE,YAAY",
 "sources": ["../scss/currency.scss"],
 "names": [],
 "file": "currency.css"

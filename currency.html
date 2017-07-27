@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="./css/currency.css">
 
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="./js/currency.js"></script>
 
 </head>
 
@@ -14,13 +14,29 @@
 	
 	<div class="form-holder">
 
-		<form class="Converter js-converter">
+		<form class="converter js-converter">
 			
 			<h2>Currency Converter</h2>
+			
+			<!-- input first currency -->
+			<label class="currency-one-label">Type in the ammount and select currency:</label><br>
 
-			<label>Type in the ammount and select currency:</label>
+			<input type="text" name="currency-one">
 
-			<input type="text" name="Currency-one">
+				<select>
+					
+					<option value="usd">USD</option>
+
+					<option value="cad">CAD</option>
+
+					<option value="eur">EUR</option>	
+
+				</select>
+
+			<!-- input second currency -->
+			<label class="currency-two-label">Converted amount:</label><br>
+
+			<input type="text" name="currency-two">
 
 				<select>
 					
@@ -34,6 +50,14 @@
 
 		</form>
 		
+	</div>
+
+	<div class="pre">
+		
+		<pre id="logger">
+			
+		</pre>
+
 	</div>
 
 </body>
