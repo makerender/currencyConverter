@@ -1,4 +1,8 @@
-header {
-  border: red solid 1px; }
+* {
+  box-sizing: border-box; }
+
+.form-holder {
+  border: 1px solid black;
+  max-width: 320px; }
 
 /*# sourceMappingURL=currency.css.map */
