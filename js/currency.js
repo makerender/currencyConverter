@@ -12,7 +12,7 @@
   // creating a new XMLHttpRequest.
   const xhr = new XMLHttpRequest()
   // HTTP method and where to request
-  xhr.open('GET', 'https://api.fixer.io/latest?symbols=USD,EUR,CAD')
+  xhr.open('GET', 'https://api.fixer.io/latest?base=CAD&symbols=USD,EUR,CAD')
   // in a GET request what you send doesn't matter
   // if POST this is the request body
   xhr.send(null)
@@ -31,5 +31,17 @@
     const logger = document.querySelector("#logger")
 
     logger.innerHTML = xhr.responseText
+
+    //creating rates variables
+    var rates = JSON.parse(xhr.responseText).rates
+
+    console.log(rates)
+
+    var usdRate = rates.USD
+
+    var eurRate = rates.EUR
+
+    console.log("USD is " + usdRate + ", EUR is " + eurRate)
   }
+
 })()
