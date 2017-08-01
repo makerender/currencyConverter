@@ -42,15 +42,6 @@
     return rates
   }
 
-  function convert() {
-
-  	var inOne, inTwo
-
-  	var inOne = document.getElementById('input1');
-
-  	var inTwo
-
-  }
 
   usdRate = rates.USD
 
@@ -60,3 +51,15 @@
 
 
 })()
+
+function convert() {
+
+  	var inOne, inTwo
+
+  	var inOne = document.getElementById('input1');
+
+  	var inTwo
+
+	inOne.value = inOne.value.toUpperCase();
+
+}
