@@ -60,6 +60,6 @@ function convert() {
 
   	var inTwo
 
-	inOne.value = inOne.value.toUpperCase();
+	inTwo.value = inOne.value;
 
 }
