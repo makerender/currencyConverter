@@ -56,10 +56,13 @@ function convert() {
 
   	var inOne, inTwo
 
+	var r = JSON.parse(logger.innerHTML).rates;
+
   	var inOne = document.getElementById('input1');
 
-  	var inTwo
+  	var inTwo = document.getElementById('input2');
 
 	inTwo.value = inOne.value;
 
+	console.log(r);
 }
