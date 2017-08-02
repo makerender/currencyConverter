@@ -37,7 +37,7 @@
     //creating rates variables
     var rates = JSON.parse(xhr.responseText).rates
 
-    console.log(rates)
+    // console.log(rates)
 
     return rates
   }
@@ -47,22 +47,28 @@
 
   eurRate = rates.EUR
 
-  console.log("USD is " + usdRate + ", EUR is " + eurRate)
+  // console.log("USD is " + usdRate + ", EUR is " + eurRate)
 
 
 })()
 
 function convert() {
 
-  	var inOne, inTwo
+  	var inOne, inTwo, r, usd, eur, cad
 
-	var r = JSON.parse(logger.innerHTML).rates;
+	r = JSON.parse(logger.innerHTML).rates;
 
-  	var inOne = document.getElementById('input1');
+  	inOne = document.getElementById('input1');
 
-  	var inTwo = document.getElementById('input2');
+  	inTwo = document.getElementById('input2');
 
-	inTwo.value = inOne.value;
+  	usd = r.USD 
+
+  	eur = r.EUR
+
+  	cad = r.CAD
+
+	inTwo.value = inOne.value * r;
 
 	console.log(r);
 }
