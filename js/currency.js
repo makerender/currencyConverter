@@ -47,7 +47,7 @@
 
   eurRate = rates.EUR
 
-  // console.log("USD is " + usdRate + ", EUR is " + eurRate)
+  console.log("USD is " + usdRate + ", EUR is " + eurRate)
 
 
 })()
@@ -62,11 +62,7 @@ function convert() {
 
   	inTwo = document.getElementById('input2');
 
-  	usd = r.USD 
-
-  	eur = r.EUR
-
-  	cad = r.CAD
+  	usd = r.USD, eur = r.EUR, cad = r.CAD
 
 	inTwo.value = inOne.value * r;
 
