@@ -19,7 +19,7 @@
   // if POST this is the request body
   xhr.send(null)
 
-  // wait for the 'readystatechange' event to fire on the xhr object
+  // wait for the 'readystatechange' event to fire on the xhr objects
   xhr.onreadystatechange = function () {
     // if xhr has not finished we're not ready yet so return
     if (xhr.readyState !== 4 ) { return }
