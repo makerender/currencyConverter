@@ -67,4 +67,6 @@ function convert() {
 	inTwo.value = inOne.value * r;
 
 	console.log(r);
+
+	console.log(inTwo.value);
 }
