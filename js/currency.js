@@ -37,7 +37,7 @@
     //creating rates variables
     var rates = JSON.parse(xhr.responseText).rates
 
-    // console.log(rates)
+    // console.log(rates)and stuff
 
     return rates
   }

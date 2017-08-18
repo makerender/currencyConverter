@@ -6,7 +6,7 @@
   border: 1px solid black;
   max-width: 320px;
   padding: 0px 20px 20px 20px;
-  font-size: 12px; }
+  font-size: 12px !important; }
 
 label, input {
   display: inline-block; }
