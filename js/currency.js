@@ -1,3 +1,4 @@
+// jQuery rates example
 // var demo = function(data) {
 //   fx.rates = data.rates
 //   var rate = fx(1).from("GBP").to("USD")
@@ -9,8 +10,6 @@
 (() => {
   'use strict'
 
-  var usdRate, eurRate, cadRate
-
   // creating a new XMLHttpRequest.
   const xhr = new XMLHttpRequest()
   // HTTP method and where to request
@@ -21,9 +20,9 @@
 
   // wait for the 'readystatechange' event to fire on the xhr objects
   xhr.onreadystatechange = function () {
-    // if xhr has not finished we're not ready yet so return
+    // if xhr has not finished we're not ready yet, so return
     if (xhr.readyState !== 4 ) { return }
-    // if it didn't get a 200 status back log the error
+    // if it didn't get a 200 status back, log the error
     if (xhr.status !== 200) { return console.log('Error: ' + xhr.status) }
 
     // if everything works log the response
@@ -34,21 +33,7 @@
 
     logger.innerHTML = xhr.responseText
 
-    //creating rates variables
-    var rates = JSON.parse(xhr.responseText).rates
-
-    // console.log(rates)
-
-    return rates
   }
-
-
-  usdRate = rates.USD
-
-  eurRate = rates.EUR
-
-  console.log("USD is " + usdRate + ", EUR is " + eurRate)
-
 
 })()
 
